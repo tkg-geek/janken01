@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>じゃんけん01</title>
+    <link rel="shortcut icon" href="img/c.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <h1>じゃんけん</h1>
+    <p>あなたの手を選択してください</p>
+    <table class="table01">
+      <tr>
+        <td><img src="img/g.png" onclick="janken(0)" /></td>
+        <td><img src="img/c.png" onclick="janken(1)" /></td>
+        <td><img src="img/p.png" onclick="janken(2)" /></td>
+      </tr>
+    </table>
+    <hr />
+    <table class="table02">
+      <tr>
+        <th>あなたの手</th>
+        <th>CPU</th>
+      </tr>
+      <tr>
+        <td><img src="" id="userImg" alt="" /></td>
+        <td><img src="" id="cpuImg" alt="" /></td>
+      </tr>
+    </table>
+    <div class="result">
+      <p id="result"></p>
+    </div>
+  </body>
+</html>
